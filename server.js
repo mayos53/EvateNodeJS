@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({
 
 var port = process.env.PORT || 8080;
 
-var token = "11q2wer34r3r3t35t";
+var token = "426871890789240";
 
 app.get('/webhook/', function (req, res) {
-  if (req.query['hub.verify_token'] === '<YOUR_VERIFY_TOKEN>') {
+  if (req.query['hub.verify_token'] === '11q2wer34r3r3t35t') {
     res.send(req.query['hub.challenge']);
   }
   res.send('Error, wrong validation token');
