@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 
 var port = process.env.PORT || 8080;
 
-var token = "<YOUR_APP_TOKEN>";
+var token = "11q2wer34r3r3t35t";
 
 app.get('/webhook/', function (req, res) {
   if (req.query['hub.verify_token'] === '<YOUR_VERIFY_TOKEN>') {
