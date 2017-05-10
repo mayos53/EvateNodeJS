@@ -17,7 +17,7 @@ app.get('/webhook/', function (req, res) {
   }else{
     res.send('Error, wrong validation token');
   }
-}
+
   // mailOptions.text = JSON.stringify(req.body)
   //  transporter.sendMail(mailOptions, (error, info) => {
   //     if (error) {
